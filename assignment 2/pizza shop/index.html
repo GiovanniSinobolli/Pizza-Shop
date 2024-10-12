@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This week we will be creating our layout using CSS Flexbox">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Pizza Shop</title>
+
+    <!--fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <img src="./img/yummers.png" alt="Pizza banner" class="header-image">
+        <ul>       
+            <nav>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Address</a></li>
+            </nav>
+        </ul>
+        <h1>Welcome to the BEST PIZZA SHOP IN TOWN</h1>
+    </header>
+
+    <main>
+        <section class="forms">
+            <div>
+                <form action="#" method="post">
+                    <label for="client">Your Name:</label>
+                    <p><input type="text" name="client" placeholder="Your Name" required></p>
+
+                    <label>Phone Number:</label>
+                    <p><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"></p> <!--[]= what numbers can be used and {}=how many numbers can be written-->
+                    
+                    <label for="client">Your Add:</label>
+                    <p><input type="text" name="address" placeholder="Your address" required></p>
+                    
+                    <label>How many Pizzas:</label>
+                        <input type="number" name="quantity" id="quantity" placeholder="0" min="0" max="5">
+                    
+                    <p></p>
+                    
+                    <label>Crust: </label>
+                        <select id="crust" required>
+                            <option value="">Select one</option>
+                            <option value="neapolitan">Neapolitan</option>
+                            <option value="new york style">New York Style</option>
+                            <option value="deepdish">Deepdish</option>
+                            <option value="thin crust">Thin Crust</option>
+                        </select>
+
+                        <p></p>
+
+                        <label>Pizza Topping: </label>
+                        <select id="topping" required>
+                            <option value="">Select one</option>
+                            <option value="pepperoni">Pepperoni</option>
+                            <option value="canadian">Canadian Style</option>
+                            <option value="supreme">Supreme</option>
+                            <option value="margherita">Margherita</option>
+                        </select>
+
+                        <p></p>
+
+                        <label>Extra Toppings: </label>
+                        <select id="extra-topping" required>
+                            <option value="">Select one</option>
+                            <option value="pepperoni">Pepperoni</option>
+                            <option value="mushrooms">Mushrooms</option>
+                            <option value="Bacon">Bacon</option>
+                            <option value="olives">Black Olives</option>
+                            <option value="pineapple">Pineapple</option>
+                        </select>
+
+                    <p></p>
+
+                    <label>Payment: </label>
+                    <input type="radio" name="payment" id="card">
+                    <label for="card">Credit/Debit Card</label>
+                    
+                    <input type="radio" name="payment" id="cash">
+                    <label for="card">Cash</label>
+                    <br>
+                    <input type="submit" value="submit" id="sendbutton">
+                    
+
+                </form>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
