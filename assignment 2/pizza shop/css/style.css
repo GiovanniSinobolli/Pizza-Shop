@@ -33,7 +33,7 @@ header::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(229, 200, 145, 0.7); /* Using your original color with transparency */
+    background-color: rgba(229, 200, 145, 0.7); /* Using original color with transparency */
     z-index: 2;
 }
 
